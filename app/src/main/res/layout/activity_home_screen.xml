@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homebkcg"
+
+    tools:context=".HomeScreen">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#5B040303"></View>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:layout_editor_absoluteX="-82dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                style="@style/Theme.AppCompat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#000000"
+                android:orientation="vertical"
+                android:theme="@style/Theme.AppCompat.DayNight"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/titleId"
+
+                    style="@style/MaterialAlertDialog.Material3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="30dp"
+                    android:fontFamily="@font/aldrich"
+                    android:text="Don't judge each day by the harvest you reap but by the seeds that you plant."
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="italic"
+                    android:theme="@style/Theme.AppCompat.DayNight" />
+
+                <TextView
+                    android:id="@+id/authorId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:fontFamily="@font/aldrich"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="60dp"
+                    android:text="- Robert Louis Stevenson"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="italic" />
+
+                <Button
+                    android:id="@+id/dsa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:drawableLeft="@drawable/ic_baseline_api_24"
+                    android:background="@drawable/input_bkcg"
+                    android:text="Data structures and Algorithms"
+                    android:textAllCaps="true" />
+
+                <Button
+                    android:id="@+id/project"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:drawableLeft="@drawable/ic_baseline_api_24"
+                    android:background="@drawable/input_bkcg"
+                    android:text="android development project"
+                    android:textAllCaps="true" />
+
+                <Button
+                    android:id="@+id/interviewPrep"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:drawableLeft="@drawable/ic_baseline_api_24"
+                    android:background="@drawable/input_bkcg"
+                    android:text="Interview Prepration"
+                    android:textAllCaps="true" />
+
+                <Button
+                    android:id="@+id/coreFundamentals"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:drawableLeft="@drawable/ic_baseline_api_24"
+                    android:background="@drawable/input_bkcg"
+                    android:text="core fundamentals"
+                    android:textAllCaps="true" />
+
+                <Button
+                    android:id="@+id/applications"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:drawableLeft="@drawable/ic_baseline_api_24"
+                    android:background="@drawable/input_bkcg"
+                    android:text="Doubt Section"
+                    android:textAllCaps="true" />
+
+                <Button
+                    android:id="@+id/dailyTest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:drawableLeft="@drawable/ic_baseline_api_24"
+                    android:background="@drawable/input_bkcg"
+                    android:text="daily test questions"
+                    android:textAllCaps="true" />
+
+                <Button
+                    android:id="@+id/sqlButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_bkcg"
+                    android:drawableLeft="@drawable/ic_baseline_api_24"
+                    android:padding="16dp"
+                    android:text="Relational Database Queries"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/dataAnalysisVisualization"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:drawableLeft="@drawable/ic_baseline_api_24"
+                    android:background="@drawable/input_bkcg"
+                    android:text="data analysis and visualisation "
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:id="@+id/copyrightId"
+                    style="@style/Theme.AppCompat.DayNight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/aldrich"
+
+                    android:gravity="center"
+                    android:paddingTop="60dp"
+                    android:text="© 2022 Shivom Sehgal. All rights reserved."
+                    android:textAllCaps="false"
+
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:textStyle="italic"
+                    android:theme="@style/Theme.AppCompat.DayNight" />
+
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginStart="24dp"
+                    android:background="@color/white"
+                    app:layout_constraintBottom_toBottomOf="@+id/or"
+                    app:layout_constraintEnd_toEndOf="@+id/signInButton"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/or"
+                    app:layout_constraintTop_toBottomOf="@+id/createNewAccount"
+                    app:layout_constraintVertical_bias="0.808" />
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

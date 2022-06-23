@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homebkcg"
+    tools:context=".AndroidProject">
+
+    <ListView
+        android:id="@+id/androidList"
+        android:layout_width="match_parent"
+        android:paddingTop="32dp"
+        android:drawableEnd="@drawable/ic_baseline_api_24"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:choiceMode="multipleChoice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+
+        />
+
+    <Button
+        android:id="@+id/enigmaButtonForIntent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_bkcg"
+        android:drawableLeft="@drawable/ic_baseline_api_24"
+        android:padding="16dp"
+        android:text="Enigma : Sample Android App "
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/copyrightId"
+        style="@style/Theme.AppCompat.DayNight"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:fontFamily="@font/aldrich"
+
+        android:gravity="center"
+        android:paddingTop="60dp"
+        android:text="© 2022 Shivom Sehgal. All rights reserved."
+        android:textAllCaps="false"
+
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        android:theme="@style/Theme.AppCompat.DayNight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="24dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/customshape.xml" value="0.2085" />
+        <entry key="app/src/main/res/drawable/ic_baseline_api_24.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_baseline_done_24.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/input_bkcg.xml" value="0.2085" />
+        <entry key="app/src/main/res/layout/activity_android_project.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_data_structures.xml" value="0.2947916666666667" />
+        <entry key="app/src/main/res/layout/activity_doubt.xml" value="0.2947916666666667" />
+        <entry key="app/src/main/res/layout/activity_enigma.xml" value="0.36519775390625003" />
+        <entry key="app/src/main/res/layout/activity_google_sign_in.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/activity_home_screen.xml" value="0.29583333333333334" />
+        <entry key="app/src/main/res/layout/activity_interview_prep.xml" value="0.28072916666666664" />
+        <entry key="app/src/main/res/layout/activity_interview_prep_editor.xml" value="0.2947916666666667" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.316925048828125" />
+        <entry key="app/src/main/res/layout/activity_relational_database.xml" value="0.2947916666666667" />
+        <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.23966864583704078" />
+        <entry key="app/src/main/res/layout/dsa_layout.xml" value="0.3185595567867036" />
+        <entry key="app/src/main/res/layout/item_message.xml" value="0.2951187133789062" />
+        <entry key="app/src/main/res/layout/relational_database_sublayout.xml" value="0.30885416666666665" />
+        <entry key="app/src/main/res/menu/main_menu.xml" value="0.2947916666666667" />
+        <entry key="app/src/main/res/menu/menu_ip.xml" value="0.2947916666666667" />
+        <entry key="app/src/main/res/menu/menu_ip_editor.xml" value="0.29375" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
