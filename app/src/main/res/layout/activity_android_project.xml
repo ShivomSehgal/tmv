@@ -9,13 +9,12 @@
 
     <ListView
         android:id="@+id/androidList"
-        android:layout_width="match_parent"
-        android:paddingTop="32dp"
-        android:drawableEnd="@drawable/ic_baseline_api_24"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="92dp"
         android:choiceMode="multipleChoice"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:drawableEnd="@drawable/ic_baseline_api_24"
+        android:paddingTop="32dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
 

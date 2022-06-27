@@ -27,6 +27,7 @@ public class HomeScreen extends AppCompatActivity {
         sqlButton = findViewById(R.id.sqlButton);
         dataAnalysisButton = findViewById(R.id.dataAnalysisVisualization);
 
+
         sqlButton.setBackgroundResource(000000);
         dataAnalysisButton.setBackgroundResource(000000);
         dsaButton.setBackgroundResource(000000);
@@ -56,18 +57,25 @@ public class HomeScreen extends AppCompatActivity {
                 startActivity(new Intent(HomeScreen.this, InterviewPrep.class));
             }
         });
-//
-//        coreFundamentalButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                startActivity(coreFundamentalIntent);
-//            }
-//        });
-//
+
+        coreFundamentalButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HomeScreen.this, CoreFundamentals.class));
+            }
+        });
+
         applicationsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(HomeScreen.this,DoubtActivity.class));
+            }
+        });
+
+        dailyTestButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeScreen.this, DailyTestQuestions.class));
             }
         });
 //
@@ -75,6 +83,13 @@ public class HomeScreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(HomeScreen.this, RelationalDatabase.class));
+            }
+        });
+
+        dataAnalysisButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeScreen.this, DataAnalysisAndVisualisation.class));
             }
         });
     }

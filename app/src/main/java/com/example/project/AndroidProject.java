@@ -95,7 +95,7 @@ public class AndroidProject extends AppCompatActivity {
         listView = (ListView) findViewById(R.id.androidList);
 
         adapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_multiple_choice, strArray);
+                android.R.layout.simple_list_item_1, strArray);
 
         listView.setAdapter(adapter);
 
