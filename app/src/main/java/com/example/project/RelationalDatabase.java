@@ -2,17 +2,39 @@ package com.example.project;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
 public class RelationalDatabase extends AppCompatActivity {
 
+    private static final long startTime = MainActivity2.timeSelectedForPreparation;
+
+    private double timeLeft = startTime*.05;
+
+    CountDownTimer mCountDownTimer;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_relational_database);
+
+        mCountDownTimer = new CountDownTimer((long)timeLeft, 1000) {
+            @Override
+            public void onTick(long millisUntilFinished) {
+                timeLeft = millisUntilFinished;
+            }
+
+            @Override
+            public void onFinish() {
+                startActivity(new Intent(RelationalDatabase.this, HomeScreen.class));
+                Toast.makeText(RelationalDatabase.this, "Relational Database Daily Limit reached", Toast.LENGTH_SHORT).show();
+            }
+        }.start();
 
         ArrayList<sqlSubclass> sqlList = new ArrayList<sqlSubclass>();
 

@@ -2,17 +2,46 @@ package com.example.project;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import com.example.project.MainActivity2;
+
+import android.os.CountDownTimer;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
 public class DataStructures extends AppCompatActivity {
 
+    public boolean alreadyVisited = HomeScreen.hasVisited;
+
+    private static final long startTime = MainActivity2.timeSelectedForPreparation;
+
+    private double timeLeft = startTime*.55;
+
+    CountDownTimer mCountDownTimer;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_data_structures);
+
+        double timeLeftNow = alreadyVisited ? timeLeft/2 : timeLeft;
+
+        mCountDownTimer = new CountDownTimer((long)timeLeftNow, 1000) {
+            @Override
+            public void onTick(long millisUntilFinished) {
+                timeLeft = millisUntilFinished;
+            }
+
+            @Override
+            public void onFinish() {
+                startActivity(new Intent(DataStructures.this, HomeScreen.class));
+                HomeScreen.hasVisited = true;
+                Toast.makeText(DataStructures.this, "Data Structures and Algorithms Daily Limit reached" + Double.toString(timeLeftNow), Toast.LENGTH_SHORT).show();
+            }
+        }.start();
 
         ArrayList<DsaSubclass> dsaList = new ArrayList<DsaSubclass>();
         dsaList.add(new DsaSubclass("Array", "Advanced","An array is a collection of items stored at contiguous memory locations. The idea is to store multiple items of the same type together. This makes it easier to calculate the position of each element by simply adding an offset to a base value, i.e., the memory location of the first element of the array (generally denoted by the name of the array). The base value is index 0 and the difference between the two indexes is the offset."));

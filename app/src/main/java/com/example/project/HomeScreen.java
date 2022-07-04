@@ -12,6 +12,7 @@ public class HomeScreen extends AppCompatActivity {
     Button dsaButton, androidProjectButton, performanceButton, dataAnalysisButton,
             applicationsButton, coreFundamentalButton, interviewPrepButton, dailyTestButton,
             sqlButton;
+    public static boolean hasVisited= false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

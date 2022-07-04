@@ -51,6 +51,11 @@
     <!-- Label for dropdown menu option if the pet is female [CHAR LIMIT=20] -->
     <string name="task_incomplete">Task Incomplete</string>
 
+
+    <string name="threeHours">3 hours</string>
+    <string name="fiveHours">5 hours</string>
+    <string name="sevenHours">7 hours</string>
+
     <string name="data_analysis">
 from optparse import Option \n
 import justpy as jp \n
@@ -398,49 +403,64 @@ def app():\n
  \n
 jp.justpy(app)    </string>
 
-    <string name="operating_System"><a href="https://www.sanfoundry.com/operating-system-questions-answers/">Operating System</a></string>
+    <string name="operating_System"><a href="https://www.sanfoundry.com/operating-system-questions-answers/">mcq</a></string>
     >
-    <string name="database"><a href="https://whimsical.com/networking-cheatsheet-by-love-babbar-FcLExFDezehhfsbDPfZDBv">Database Management</a></string>
+    <string name="operating_SystemCs"><a href="https://whimsical.com/operating-system-cheatsheet-by-love-babbar-S9tuWBCSQfzoBRF5EDNinQ">Cheat-Sheet</a></string>
+    >
+    <string name="databaseCn"><a href="https://whimsical.com/dbms-roadmap-by-love-babbar-FmUi8ffVop33t3MmpVxPCo">Cheat-sheett</a></string>
+    >
+    <string name="database"><a href="https://www.sanfoundry.com/1000-database-management-system-questions-answers/">mcq</a></string>
     >
     <string name="data_structures_algo"><a href="https://www.sanfoundry.com/1000-data-structure-questions-answers/">Data structures and Algorithms</a></string>
     >
     <string name="mcqCn"><a href="https://www.sanfoundry.com/computer-network-questions-answers/">MCQS</a></string>
     >
     <string name="cheatsheetCn"><a href="https://whimsical.com/networking-cheatsheet-by-love-babbar-FcLExFDezehhfsbDPfZDBv">Cheat-Sheet</a></string>
-    <string name="object_oriented"><a href="https://www.interviewbit.com/oops-interview-questions/">Object Oriented Programming</a></string>
+    <string name="object_oriented"><a href="https://www.interviewbit.com/oops-interview-questions/">mcq</a></string>
+    >
+    <string name="object_orientedCn"><a href="https://whimsical.com/object-oriented-programming-cheatsheet-by-love-babbar-YbSgLatbWQ4R5paV7EgqFw">cheat-sheet</a></string>
     >
     <string name="Reverse_Level_Order_Traversal">
-        <a href = "https://practice.geeksforgeeks.org/problems/reverse-level-order-traversal/1">Reverse Level Order Traversal</a>
+        <a href="https://practice.geeksforgeeks.org/problems/reverse-level-order-traversal/1">Reverse Level Order Traversal</a>
     </string>
     <string name="Level_Order_Traversal">
-        <a href = "https://practice.geeksforgeeks.org/problems/level-order-traversal/1"> Level Order Traversal</a>
+        <a href="https://practice.geeksforgeeks.org/problems/level-order-traversal/1"> Level Order Traversal</a>
     </string>
     <string name="LeftView">
-        <a href = "https://practice.geeksforgeeks.org/problems/left-view-of-binary-tree/1"> Level Order Traversal</a>
+        <a href="https://practice.geeksforgeeks.org/problems/left-view-of-binary-tree/1"> Left View of Binary Tree</a>
     </string>
     <string name="RightView">
-        <a href = "https://practice.geeksforgeeks.org/problems/right-view-of-binary-tree/1"> Level Order Traversal</a>
+        <a href="https://practice.geeksforgeeks.org/problems/right-view-of-binary-tree/1"> Right View of Binary Tree</a>
     </string>
     <string name="TopView">
-        <a href = "https://practice.geeksforgeeks.org/problems/top-view-of-binary-tree/1"> Level Order Traversal</a>
+        <a href="https://practice.geeksforgeeks.org/problems/top-view-of-binary-tree/1"> Top View of Binary Tree </a>
     </string>
     <string name="BottomView">
-        <a href = "https://practice.geeksforgeeks.org/problems/bottom-view-of-binary-tree/1"> Level Order Traversal</a>
+        <a href="https://practice.geeksforgeeks.org/problems/bottom-view-of-binary-tree/1"> Bottom View of Binary Tree</a>
     </string>
 
     <string name="ZigZag">
-        <a href = "https://practice.geeksforgeeks.org/problems/zigzag-tree-traversal/1"> Level Order Traversal</a>
+        <a href="https://practice.geeksforgeeks.org/problems/zigzag-tree-traversal/1"> Zig Zag Traversal</a>
     </string>
     <string name="Sum_of_longest_bloodline">
-        <a href = "https://practice.geeksforgeeks.org/problems/sum-of-the-longest-bloodline-of-a-tree/1"> Level Order Traversal</a>
+        <a href="https://practice.geeksforgeeks.org/problems/sum-of-the-longest-bloodline-of-a-tree/1"> Sum of Longest Bloodline</a>
     </string>
     <string name="Lowest_common_ancestor">
-        <a href = "https://practice.geeksforgeeks.org/problems/lowest-common-ancestor-in-a-binary-tree/1"> Level Order Traversal</a>
+        <a href="https://practice.geeksforgeeks.org/problems/lowest-common-ancestor-in-a-binary-tree/1">Lowest Common Ancestor</a>
     </string>
-    <string name="Balanced">
-        <a href = "https://practice.geeksforgeeks.org/problems/check-for-balanced-tree/1"> Level Order Traversal</a>
+    <string name="Height">
+        <a href="https://www.geeksforgeeks.org/write-a-c-program-to-find-the-maximum-depth-or-height-of-a-tree/"> Height of Binary Tree</a>
     </string>
 
+    <string name="Diameter">
+        <a href="https://practice.geeksforgeeks.org/problems/diameter-of-binary-tree/1/"> Diameter of the Binary Tree</a>
+    </string>
+    <string name="Vertical">
+        <a href="https://www.geeksforgeeks.org/print-binary-tree-vertical-order/"> Vertical View of Binary Tree</a>
+    </string>
+    <string name="SerDeserialize">
+        <a href="https://www.geeksforgeeks.org/serialize-deserialize-binary-tree/"> Serialize and Deserialize </a>
+    </string>
 
 
 </resources>

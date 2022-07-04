@@ -69,4 +69,96 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <ImageView
+        android:id="@+id/userInterface"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="99dp"
+        android:onClick="openBrowser"
+        android:tag="https://classroom.udacity.com/courses/ud834"
+        android:paddingTop="35dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toEndOf="@+id/androidList"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_double_arrow_24" />
+
+    <ImageView
+        android:id="@+id/userInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:onClick="openBrowser"
+        android:tag="https://classroom.udacity.com/courses/ud836"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toEndOf="@+id/androidList"
+        app:layout_constraintTop_toBottomOf="@+id/userInterface"
+        app:srcCompat="@drawable/ic_baseline_double_arrow_24" />
+
+    <ImageView
+        android:id="@+id/multiscreenApps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:onClick="openBrowser"
+        android:tag="https://classroom.udacity.com/courses/ud839"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toEndOf="@+id/androidList"
+        app:layout_constraintTop_toBottomOf="@+id/userInput"
+        app:srcCompat="@drawable/ic_baseline_double_arrow_24" />
+
+    <ImageView
+        android:id="@+id/networking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:onClick="openBrowser"
+        android:tag="https://classroom.udacity.com/courses/ud843"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toEndOf="@+id/androidList"
+        app:layout_constraintTop_toBottomOf="@+id/multiscreenApps"
+        app:srcCompat="@drawable/ic_baseline_double_arrow_24" />
+
+    <ImageView
+        android:id="@+id/developingAndroidApps"
+        android:layout_width="wrap_content"
+        android:onClick="openBrowser"
+        android:tag="https://classroom.udacity.com/courses/ud851"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toEndOf="@+id/androidList"
+        app:layout_constraintTop_toBottomOf="@+id/networking"
+        app:srcCompat="@drawable/ic_baseline_double_arrow_24" />
+
+    <ImageView
+        android:id="@+id/firebase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="https://classroom.udacity.com/courses/ud0352"
+        android:onClick="openBrowser"
+        android:layout_marginTop="38dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toEndOf="@+id/androidList"
+        app:layout_constraintTop_toBottomOf="@+id/developingAndroidApps"
+        app:srcCompat="@drawable/ic_baseline_double_arrow_24" />
+
+    <ImageView
+        android:id="@+id/materialDesign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:tag="https://classroom.udacity.com/courses/ud862"
+        android:onClick="openBrowser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toEndOf="@+id/androidList"
+        app:layout_constraintTop_toBottomOf="@+id/firebase"
+        app:srcCompat="@drawable/ic_baseline_double_arrow_24" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

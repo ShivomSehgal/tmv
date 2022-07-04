@@ -30,6 +30,8 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
 
+
+
     private static final int RC_SIGN_IN = 1000;
     Button loginButton;
     TextView createNewAccount;
@@ -39,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
     ProgressDialog progressDialog;
     FirebaseAuth mAuth;
     FirebaseUser mUser;
-    ImageView mGoogle,mApple;
+    ImageView mGoogle,mApple, mFacebook;
     GoogleSignInOptions gso;
     GoogleSignInClient mGoogleSignInClient;
     ImageView googleLogin;
@@ -52,6 +54,14 @@ public class MainActivity extends AppCompatActivity {
 
         googleLogin = findViewById(R.id.googleLogIn);
         mApple = findViewById(R.id.appleLogIn);
+        mFacebook = findViewById(R.id.facebookLogIn);
+
+        mFacebook.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, MainActivity2.class));
+            }
+        });
 
         mApple.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -146,7 +156,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void sendUserToNextActivity() {
 //        startActivity(new Intent(SignUp.this, HomeScreen.class));
-        Intent intent = new Intent(MainActivity.this, HomeScreen.class);
+        Intent intent = new Intent(MainActivity.this, MainActivity2.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }
